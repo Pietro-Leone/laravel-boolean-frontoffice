@@ -13,12 +13,12 @@ const routes = [
   {
     path: "/chi-siamo",
     name: "chi-siamo",
-    component: Contacts,
+    component: AboutUs,
   },
   {
     path: "/contatti",
     name: "contatti",
-    component: AboutUs,
+    component: Contacts,
   },
 ];
 
