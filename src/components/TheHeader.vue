@@ -1,5 +1,9 @@
 <script>
 import { router } from '../router';
+
+export default {
+}
+
 </script>
 
 <template>
