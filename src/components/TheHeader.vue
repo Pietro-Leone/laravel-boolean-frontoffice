@@ -46,6 +46,9 @@ export default {
 </template>
 
 <style scoped lang="scss">
+.navbar {
+    background-color: #4d5260;
+}
 .nav-link {
     text-decoration: none;
     color: white;
@@ -57,9 +60,6 @@ export default {
     }
 }
 
-.navbar {
-    background-color: #4d5260;
-}
 
 .navbar-nav .nav-link.active,
 .navbar-nav .nav-link.show {

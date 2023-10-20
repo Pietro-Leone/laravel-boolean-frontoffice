@@ -28,8 +28,8 @@ export default {
             <div class="row row-cols-1 row-cols-sm-3">
                 <div class="col" v-for="link in footerLinks">
                     <ul class="navbar-nav me-auto align-items-center">
-                        <li class="nav-item footer-link">
-                            <router-link class="nav-link p-1" :class="{ 'active': $route.name === link.route }"
+                        <li class="nav-item">
+                            <router-link class="footer-link  p-1" :class="{ 'active': $route.name === link.route }"
                                 :to="{ name: link.route }">{{ link.title }}</router-link>
                         </li>
                     </ul>
@@ -92,21 +92,23 @@ export default {
 <style scoped lang="scss">
 footer {
     box-shadow: 5px 5px 10px 0px #212529;
-}
 
-.footer-link {
-    text-decoration: none;
-    color: white;
-    transition: transform 0.2s;
 
-    &:hover {
-        color: rgb(255, 141, 48);
-        transform: scale(1.05);
+    .footer-link {
+        text-decoration: none;
+        color: white;
+        transition: transform 0.2s;
+
+        &:hover {
+            color: rgb(255, 141, 48);
+            transform: scale(1.05);
+        }
+
+        &:active {
+            color: rgb(255, 141, 48);
+            font-weight: bold;
+        }
+
     }
-    &:active {
-        color: rgb(255, 141, 48);
-        font-weight: bold;
-    }
 }
-
 </style>
