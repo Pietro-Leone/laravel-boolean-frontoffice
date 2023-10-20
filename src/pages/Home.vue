@@ -1,8 +1,10 @@
 <script>
+import DrinkCard from '../components/DrinkCard.vue';
 
 export default {
-    // components: {
-    // }
+    components: {
+        DrinkCard
+    }
     // data() {
     //     return {
     //     };
@@ -17,8 +19,19 @@ export default {
 <template>
     <div class="container body-padding-top">
         <h1>Home</h1>
+
+        <div class="cards-container d-flex gap-3 flex-wrap">
+            <div class="drink-card position-relative text-white">
+                <DrinkCard />
+            </div>
+        </div>
     </div>
 </template>
 
-<style scoped lang="scss">
+<style lang="scss" scoped>
+.drink-card {
+    background-color: black;
+    width: calc((100% / 4) - .75rem);
+    aspect-ratio: 1/1;
+}
 </style>
