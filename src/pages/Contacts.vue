@@ -20,7 +20,7 @@ export default {
 </script>
 
 <template>
-    <div class="container">
+    <div class="container body-padding-top">
         <h1>Inviami una Mail!</h1>
 
 
@@ -44,7 +44,7 @@ export default {
             <button type="submit" class="custom-btn">Invia</button>
         </form>
 
-        <router-link class="custom-btn" :to="{ name: 'Home' }">Torna Indietro</router-link>
+        <router-link class="custom-btn" :to="{ name: 'home' }">Torna Indietro</router-link>
     </div>
 </template>
   
