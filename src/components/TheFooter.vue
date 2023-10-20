@@ -23,7 +23,7 @@ export default {
 </script>
 
 <template>
-    <footer class="text-white bg-dark fixed-bottom">
+    <footer class="text-white bg-dark">
         <div class="container p-3">
             <div class="row row-cols-1 row-cols-sm-3">
                 <div class="col" v-for="link in footerLinks">

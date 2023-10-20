@@ -1,6 +1,9 @@
 @import '@fortawesome/fontawesome-free/css/all.min.css';
 @import "bootstrap";
 
-.body-padding-top {
-    padding-top: 100px;
+
+body{
+    background: linear-gradient(to bottom, #4e5362, #444444, #555555);
+    background-repeat: no-repeat;
+    min-height: 100vh;
 }

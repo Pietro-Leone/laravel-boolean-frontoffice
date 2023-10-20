@@ -10,7 +10,7 @@ export default {
 }
 </script>
 <template>
-  <body>
+  
 
 
     <TheHeader></TheHeader>
@@ -19,12 +19,14 @@ export default {
     </main>
 
     <TheFooter></TheFooter>
-  </body>
+  
 </template>
 
 <style lang="scss">
-body {
-  background: linear-gradient(to bottom, #4e5362, #444444, #555555);
-  background-repeat: no-repeat;
+
+main{
+  padding: 8rem 0;
 }
+
+
 </style>
