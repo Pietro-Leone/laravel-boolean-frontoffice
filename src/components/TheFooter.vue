@@ -15,8 +15,7 @@ export default {
 </script>
 
 <template>
-
-<footer class="bg-dark text-white">
+    <!-- <footer class="bg-dark text-white">
     <div class="container">
         <div class="row row-cols-4">
             <div class="col">
@@ -41,10 +40,7 @@ export default {
             </div>
         </div>
     </div>
-</footer>
-
-
-
+</footer> -->
 </template>
 
 <style scoped lang="scss"></style>
