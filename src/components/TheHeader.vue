@@ -8,7 +8,7 @@ export default {
 
 <template>
     <nav class="navbar navbar-expand navbar-dark fixed-top bg-transparent shadow" aria-label="Second navbar example">
-        <div class="container-fluid" style="height: 60px;">
+        <div class="container" style="height: 60px;">
             <a class="navbar-brand" href="#">Drinks</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample02"
                 aria-controls="navbarsExample02" aria-expanded="false" aria-label="Toggle navigation">
