@@ -24,13 +24,7 @@ export default {
 
 <style lang="scss">
 body {
-  body {
-    background: linear-gradient(to bottom, #4e5362, #444444, #555555);
-
-  }
-
+  background: linear-gradient(to bottom, #4e5362, #444444, #555555);
   background-repeat: no-repeat;
-  height: 900px;
-
 }
 </style>

@@ -15,6 +15,7 @@ export default {
     fetchDrinks(url){
       axios.get(url).then((response) => {
         this.drinks = response.data;
+        
     })
     }
   },
@@ -29,8 +30,8 @@ export default {
     <h1>Home</h1>
 
     <div class="cards-container d-flex gap-3 flex-wrap">
-      <div class="drink-card position-relative text-white">
-        <DrinkCard />
+      <div class="drink-card position-relative text-white" v-for="drink in drinks">
+        <DrinkCard :drink="drink"/>
       </div>
     </div>
   </div>
