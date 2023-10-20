@@ -52,7 +52,7 @@ export default {
     transition: transform 0.2s;
 
     &:hover {
-        color: #FE652F;
+        color: rgb(255, 141, 48);
         transform: scale(1.05);
     }
 }
@@ -64,7 +64,7 @@ export default {
 .navbar-nav .nav-link.active,
 .navbar-nav .nav-link.show {
     // color: var(--bs-navbar-active-color);
-    color: #FE652F;
+    color: rgb(255, 141, 48);
     font-weight: bold;
 }
 </style>

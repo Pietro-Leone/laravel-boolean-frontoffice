@@ -2,14 +2,18 @@
 @import "bootstrap";
 
 
-body{
-    background: linear-gradient(to bottom, #4e5362, #444444, #555555);
+body {
+    background: rgb(106, 130, 152);
+    background: linear-gradient(225deg, rgba(106, 130, 152, 1) 0%, rgba(178, 148, 180, 1) 80%, rgba(215, 173, 112, 1) 100%);
+    // background: rgb(106, 130, 152);
+    // background: linear-gradient(75deg, rgba(106, 130, 152, 1) 0%, rgba(158, 151, 133, 1) 80%, rgba(215, 173, 112, 1) 100%);
+    // background: linear-gradient(to bottom, #4e5362, #444444, #555555);
     background-repeat: no-repeat;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
 }
 
-#app{
+#app {
     display: contents;
 }

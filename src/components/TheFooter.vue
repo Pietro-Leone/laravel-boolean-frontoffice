@@ -100,13 +100,13 @@ footer {
     transition: transform 0.2s;
 
     &:hover {
-        color: #FE652F;
+        color: rgb(255, 141, 48);
         transform: scale(1.05);
+    }
+    &:active {
+        color: rgb(255, 141, 48);
+        font-weight: bold;
     }
 }
 
-.active {
-    color: #FE652F;
-    font-weight: bold;
-}
 </style>

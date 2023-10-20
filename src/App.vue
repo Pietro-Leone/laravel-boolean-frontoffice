@@ -10,24 +10,22 @@ export default {
 }
 </script>
 <template>
-  
+  <TheHeader></TheHeader>
+  <main>
+    <router-view></router-view>
+  </main>
 
-
-    <TheHeader></TheHeader>
-    <main>
-      <router-view></router-view>
-    </main>
-
-    <TheFooter></TheFooter>
-  
+  <TheFooter></TheFooter>
 </template>
 
 <style lang="scss">
+main {
+  h1, h4 {
+    color: rgb(255, 141, 48);
 
-main{
+  }
+
   padding: 8rem 0;
   flex-grow:1;
 }
-
-
 </style>
