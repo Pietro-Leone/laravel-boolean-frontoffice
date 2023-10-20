@@ -63,7 +63,8 @@ export default {
 
 .navbar-nav .nav-link.active,
 .navbar-nav .nav-link.show {
-    color: var(--bs-navbar-active-color);
+    // color: var(--bs-navbar-active-color);
+    color: #FE652F;
     font-weight: bold;
 }
 </style>

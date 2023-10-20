@@ -6,4 +6,10 @@ body{
     background: linear-gradient(to bottom, #4e5362, #444444, #555555);
     background-repeat: no-repeat;
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#app{
+    display: contents;
 }

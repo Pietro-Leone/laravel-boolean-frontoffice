@@ -47,12 +47,7 @@ export default {
         <router-link class="custom-btn" :to="{ name: 'home' }">Torna Indietro</router-link>
     </div>
 </template>
-  
 
-
-  
-
-  
 <style scoped lang="scss">
 .custom-btn {
     color: #070606;
@@ -72,4 +67,3 @@ export default {
 
 }
 </style>
-  
