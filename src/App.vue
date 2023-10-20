@@ -10,10 +10,13 @@ export default {
 }
 </script>
 <template>
-  <TheHeader></TheHeader>
-  <main>
-    <router-view></router-view>
-  </main>
+  
+
+
+    <TheHeader></TheHeader>
+    <main>
+      <router-view></router-view>
+    </main>
 
   <TheFooter></TheFooter>
 </template>
