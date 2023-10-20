@@ -15,7 +15,6 @@ export default {
     fetchDrinks(url){
       axios.get(url).then((response) => {
         this.drinks = response.data;
-        
     })
     }
   },

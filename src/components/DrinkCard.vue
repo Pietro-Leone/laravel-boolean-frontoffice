@@ -13,7 +13,6 @@ methods:{
 },
 mounted(){
   this.drink.ingredients = this.getIngredients();
-  console.log(this.drink.ingredients);
 }
 }
 </script>
