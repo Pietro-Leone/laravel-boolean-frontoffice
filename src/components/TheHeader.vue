@@ -7,7 +7,7 @@ export default {
 </script>
 
 <template>
-    <nav class="navbar navbar-expand navbar-dark fixed-top bg-transparent shadow" aria-label="Second navbar example">
+    <nav class="navbar navbar-expand navbar-dark fixed-top shadow" aria-label="Second navbar example">
         <div class="container" style="height: 60px;">
             <a class="navbar-brand" href="#">Drinks</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample02"
@@ -42,9 +42,12 @@ export default {
     transition: transform 0.2s;
 }
 
-
 .nav-link:hover {
     transform: scale(1.05);
+}
+
+.navbar {
+    background-color: #4d5260;
 }
 </style>
 
