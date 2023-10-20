@@ -15,13 +15,10 @@ export default {
 </script>
 
 <template>
-    <div class="container home-cont">
-        <h1>babla</h1>
+    <div class="container body-padding-top">
+        <h1>Home</h1>
     </div>
 </template>
 
 <style scoped lang="scss">
-.home-cont {
-    padding-top: 100px;
-}
 </style>
