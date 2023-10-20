@@ -26,6 +26,7 @@ export default {
 
 main{
   padding: 8rem 0;
+  flex-grow:1;
 }
 
 
