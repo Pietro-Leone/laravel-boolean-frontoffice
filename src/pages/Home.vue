@@ -44,14 +44,16 @@ export default {
   <div class="container">
     <h1>I Nostri Drink</h1>
 
-    <form @submit.prevent="filterByAlcol()" class="d-flex gap-3 my-3">
-      <select class="form-select w-auto" aria-label="Default select example" v-model="alcolFilter">
-        <option value="Tutti" selected>Tutti</option>
-        <option value="Alcolico">Alcolico</option>
-        <option value="Analcolico">Analcolico</option>
-      </select>
-      <button class="btn btn-primary" type="submit">Filtra</button>
-    </form>
+    <div class="d-flex justify-content-center mb-5">
+      <form @submit.prevent="filterByAlcol()" class="d-flex gap-3 my-3">
+        <select class="form-select w-auto" aria-label="Default select example" v-model="alcolFilter">
+          <option value="Tutti" selected>Tutti</option>
+          <option value="Alcolico">Alcolico</option>
+          <option value="Analcolico">Analcolico</option>
+        </select>
+        <button class="btn btn-filtra" type="submit">Filtra</button>
+      </form>
+    </div>
 
     <div class="cards-container d-flex gap-3 flex-wrap">
       <div class="drink-card position-relative text-white" v-for="drink in drinks">
@@ -62,7 +64,7 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-
+@import '/src/style/variables/_variables.scss';
 h1{
   text-align: center;
   font-size: 72px;
@@ -81,6 +83,9 @@ h1{
   //background-color: black;
   //width: calc((100% / 4) - .75rem);
   //aspect-ratio: 1/1;
+}
 
+.btn-filtra {
+    background-color: $main-color;
 }
 </style>
