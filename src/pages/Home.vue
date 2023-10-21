@@ -41,8 +41,8 @@ export default {
 </script>
 
 <template>
-  <div class="container body-padding-top">
-    <h1>Home</h1>
+  <div class="container">
+    <h1>I Nostri Drink</h1>
 
     <form @submit.prevent="filterByAlcol()" class="d-flex gap-3 my-3">
       <select class="form-select w-auto" aria-label="Default select example" v-model="alcolFilter">
@@ -62,11 +62,25 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-//Bisogna importare il file variabili se le si vuole usare
-@import '/src/style/variables/_variables.scss';
-.drink-card {
-  background-color: black;
-  width: calc((100% / 4) - .75rem);
-  aspect-ratio: 1/1;
+
+h1{
+  text-align: center;
+  font-size: 72px;
+  margin-bottom: 1.5rem;
+  //background: -webkit-linear-gradient(rgba(106, 130, 152, 1) 0%,  rgb(230, 138, 18) 100%);
+  background: -webkit-linear-gradient(rgb(156 39 176) 0%, rgb(230, 138, 18) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  
+  //background-color: black;
+  //width: calc((100% / 4) - .75rem);
+  //aspect-ratio: 1/1;
+
 }
 </style>

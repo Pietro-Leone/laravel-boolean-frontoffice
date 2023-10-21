@@ -6,57 +6,172 @@ export default {
       required: true,
     }
   },
-methods:{
-  getIngredients(){
-    return JSON.parse(this.drink.ingredients);
+  methods: {
+    getIngredients() {
+      return JSON.parse(this.drink.ingredients);
+    }
+  },
+  mounted() {
+    this.drink.ingredients = this.getIngredients();
   }
-},
-mounted(){
-  this.drink.ingredients = this.getIngredients();
-}
 }
 </script>
 
 <template>
-  <div class="w-100">
-    <img class="w-100 h-100" :src="drink.thumbnail" alt="">
+  <!-- Details Card -->
+  <div class="book">
+    <div class="drink-details">
+      <h4>{{ drink.drink_name }}</h4>
 
-    <h6 class="text-center my-2">{{ drink.drink_name }}</h6>
-  </div>
-
-  <div class="drink-details w-100 h-100 p-3 position-absolute top-0">
-    <h3>{{ drink.drink_name }}</h3>
-
-    <h5>
-      <span class="fw-normal">{{ drink.alcoholic === "Alcoholic" ? "Alcolico" : "Analcolico" }}</span>
-    </h5>
-
-    <h5>
-      Ingredienti:
-      <span class="fw-normal">
-        <span v-for="(ingredient, i) in drink.ingredients">{{ drink.ingredients.length -1 === i ? ingredient + "." : ingredient + ", " }}</span>
+      <h6>
+        Ingredienti:
+      </h6>
+      <span>
+        <span v-for="(ingredient, i) in drink.ingredients">{{ drink.ingredients.length - 1 === i ? ingredient + "." :
+          ingredient + ", " }}</span>
       </span>
-    </h5>
 
-    <h5>
-      Categoria:
-      <span class="fw-normal">{{ drink.category}}</span>
-    </h5>
-    <h5>
-      Prezzo:
-      <span class="fw-normal">{{drink.price}}€</span>
-    </h5>
+      <h6>
+        Categoria:
+      </h6>
+      <span>{{ drink.category }}</span>
 
+    </div>
+
+
+    <!-- Thumb Card -->
+    <div class="cover">
+      <div>
+        <div>
+          <div class="w-100">
+            <img class="w-100 h-100 pers-border" :src="drink.thumbnail" alt="">
+
+            <h5 class="text-center my-2">{{ drink.drink_name }}</h5>
+          </div>
+        </div>
+
+        <div class="px-3 position-relative d-flex align-items-center flex-column">
+          <p>{{ drink.alcoholic === "Alcoholic" ? "Alcolico" : "Analcolico" }}</p>
+          <small class="fw-bold">{{ drink.price }}€</small>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
 <style lang="scss" scoped>
-.drink-details {
-  display: none;
-  background-color: rgba(0, 0, 0, 0.9);
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,700;1,400&display=swap');
+
+.book {
+  text-align: end;
+
+  position: relative;
+  border-radius: 10px;
+  width: 255px;
+  height: 360px;
+  background: rgb(106, 130, 152);
+  background: linear-gradient(48deg, rgba(106, 130, 152, 1) 8%, rgb(255, 183, 48)100%);
+  -webkit-box-shadow: 1px 1px 12px #000;
+  box-shadow: 1px 1px 12px #000;
+  -webkit-transform: preserve-3d;
+  -ms-transform: preserve-3d;
+  transform: preserve-3d;
+  -webkit-perspective: 2000px;
+  perspective: 2000px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  color: #000000;
+
+  .drink-details {
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    position: absolute;
+    top: 0;
+
+    h4,
+    h6 {
+      color: whitesmoke;
+      margin: 1rem 0.5rem;
+      font-size: larger;
+      font-weight: bold;
+
+    }
+    span{
+      font-size: 1.2rem;
+    }
+
+  }
+  small {
+    font-size: larger;
+  }
+  
+
+
+  .pers-border {
+    border-top-left-radius: 4%;
+    border-top-right-radius: 25%;
+  }
+
+  .cover {
+    top: 0;
+    position: absolute;
+    background-color: #4d5260;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    -webkit-transform-origin: 0;
+    -ms-transform-origin: 0;
+    transform-origin: 0;
+    -webkit-box-shadow: 1px 1px 12px #000;
+    box-shadow: 1px 1px 12px #000;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    border-top-right-radius: 25%;
+
+    h5 {
+      color: rgb(255, 141, 48);
+    }
+
+    small,
+    p {
+      margin-bottom: .5rem;
+      color: lightgray;
+    }
+
+
+  }
+
+  &:hover .cover {
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    -webkit-transform: rotatey(-80deg);
+    -ms-transform: rotatey(-80deg);
+    transform: rotatey(-85deg);
+  }
 }
 
-.drink-card:hover .drink-details {
-  display: block;
-}
+
+
+// .pers-position {
+//   position: absolute;
+//   right: 20px;
+// }
 </style>
