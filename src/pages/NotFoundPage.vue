@@ -15,5 +15,8 @@ export default {
   
 
   
-<style scoped lang="scss"></style>
+<style scoped lang="scss">
+//Bisogna importare il file variabili se le si vuole usare
+@import '/src/style/variables/_variables.scss';
+</style>
   

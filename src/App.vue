@@ -24,11 +24,12 @@ export default {
 <style lang="scss">
 main {
   h1, h4 {
-    color: rgb(255, 141, 48);
+    color: #ff8d30;
 
   }
 
-  padding: 8rem 0;
+  padding-top: 8rem;
+  padding-bottom:2rem;
   flex-grow:1;
 }
 </style>

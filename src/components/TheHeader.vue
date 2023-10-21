@@ -47,7 +47,7 @@ export default {
 
 <style scoped lang="scss">
 .navbar {
-    background-color: #4d5260;
+    background-color: rgb(77, 82, 96);
 }
 .nav-link {
     text-decoration: none;
