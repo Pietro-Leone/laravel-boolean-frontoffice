@@ -8,7 +8,7 @@ export default {
   },
   methods: {
     getIngredients() {
-      return JSON.parse(this.drink.ingredients);
+      return JSON.parse(this.drink.ingredients).join(", ");
     }
   },
   mounted() {
@@ -27,8 +27,7 @@ export default {
         Ingredienti:
       </h6>
       <span>
-        <span v-for="(ingredient, i) in drink.ingredients">{{ drink.ingredients.length - 1 === i ? ingredient + "." :
-          ingredient + ", " }}</span>
+        <span>{{getIngredients()}}</span>
       </span>
 
       <h6>
