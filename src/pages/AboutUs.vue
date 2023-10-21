@@ -6,7 +6,7 @@ export default {
 
 <template>
   <div class="container body-padding-top">
-    <div class="pt-4 pb-3 mb-5 rounded semitransparent-bg">
+    <div class="pt-4 pb-3 mb-5  semitransparent-bg">
       <h1 class="text-center">Benvenuti nel nostro Cocktail Bar!</h1>
       <p class="pb-2 pt-2 text-center text-white">
         Se sei alla ricerca di un <span class="text-white fw-bold">drink gustoso</span> accompagnato da una
@@ -23,53 +23,89 @@ export default {
         src="https://images.squarespace-cdn.com/content/v1/58d15ded6a49638c26e0888c/4dd33a5a-07e9-47a7-a811-4f2cf8178060/bartender-making-alcoholic-cocktail-summer-cocktail-bar.jpg"
         alt="Cocktail Bar">
   </div>
-  <div class="container pb-5 ">
-    <div class="pt-3 pg-5 mt-1 text-center rounded semitransparent-bg">
-      <h2 class="mb-3">IL nostro Team!</h2>
-      <p class="text-white">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis quo nisi id quod, ea maiores, molestiae
-        architecto deleniti optio provident adipisci expedita, sunt dolorem obcaecati earum temporibus dolor? Doloribus,
-        ullam?
+  <div class="container pb-2 ">
+    <div class="pt-3 pb-3 mt-1 mb-5 text-center rounded semitransparent-bg">
+      <h2 class="mb-3 primary-color">Drink Team</h2>
+      <p class="text-white mb-5">
+        Il "Drink Team" è un gruppo di amici che condivide una <span class="fw-bold">passione per le bevande e la convivialità.</span><br>
+        Ogni membro porta un tocco unico al team, creando <span class="fw-bold">un'atmosfera vivace e accogliente.</span><br>
+        <span class="fw-bold">Ecco una breve presentazione dei membri:</span>
       </p>
       <div class="row row-cols-1 row-cols-md-3 mb-5">
         <div class="col">
-          <img class="rounded-img"
-            src="https://us.123rf.com/450wm/fesenko/fesenko1703/fesenko170300005/74993243-bartender-en-camisa-blanca-est%C3%A1-haciendo-un-c%C3%B3ctel-en-la-barra-de-bar.jpg"
+          <a href="https://github.com/Pietro-Leone" target="_blank" class="text-decoration-none">
+            <img class="rounded-img"
+            src="/public/images/Fratello1.jpg"
             alt="Team">
-          <p class="text-white">Lorem Ipsum</p>
+            <div class="fw-bold primary-color">Pietro Åååååh</div>
+            <small class="text-white">Cuoco del gruppo</small>
+          </a>
         </div>
         <div class="col">
-          <img class="rounded-img"
-            src="https://us.123rf.com/450wm/misterforeman/misterforeman2112/misterforeman211203828/179249648-il-barista-crea-un-cocktail-nella-birreria.jpg?ver=6"
+          <a href="https://github.com/GabrielePazi" target="_blank" class="text-decoration-none">
+            <img class="rounded-img"
+            src="/public/images/Fratello2.jpg"
             alt="Team">
-          <p class="text-white">Lorem Ipsum</p>
+            <div class="fw-bold primary-color">Gabriele Leone</div>
+            <small class="text-white">Intenditore di birre artigianali</small>
+          </a>
         </div>
         <div class="col">
-          <img class="rounded-img"
-            src="https://us.123rf.com/450wm/misterforeman/misterforeman2011/misterforeman201101308/158957358-la-ragazza-del-barista-prepara-un-cocktail-nella-sala-dei-bar.jpg"
+          <a href="https://github.com/AndreaLinza" target="_blank" class="text-decoration-none">
+            <img class="rounded-img"
+            src="/public/images/Genitore1.jpg"
             alt="Team">
-          <p class="text-white">Lorem Ipsum</p>
+            <div class="fw-bold primary-color">Andrea Mazara</div>
+            <small class="text-white">Il "gourmet" del gruppo</small>
+          </a>
+        </div>
+      </div>
+      <div class="row row-cols-1 row-cols-md-3 mb-5">
+        <div class="col">
+          <a href="https://github.com/IvanoPisaniello" target="_blank" class="text-decoration-none">
+            <img class="rounded-img"
+            src="/public/images/Genitore2.png"
+            alt="Team">
+          <div class="fw-bold primary-color">Ivano Formattato</div>
+          <small class="text-white">Responsabile musica e atmosfera</small>
+          </a>
+        </div>
+        <div class="col">
+          <a href="https://github.com/giuliacrr" target="_blank" class="text-decoration-none">
+            <img class="rounded-img"
+            src="/public/images/Sorella1.jpg"
+            alt="Team">
+            <div class="fw-bold primary-color">Giulia Non Ho Capito </div>
+            <small class="text-white">L'appassionata di vini</small>
+          </a>
+        </div>
+        <div class="col">
+          <a href="https://github.com/ElyPoli" target="_blank" class="text-decoration-none">
+            <img class="rounded-img"
+            src="/public/images/Sorella2.jpg"
+            alt="Team">
+            <div class="fw-bold primary-color">Elisa di Rivombrosa</div>
+            <small class="text-white">Creativa del gruppo</small>
+          </a>
         </div>
       </div>
     </div>
-    <div class="pb-4">
+    <div class="pb-4 pt-4 semitransparent-bg">
       <div class="row row-cols-1 row-cols-md-2">
         <div class="col">
-          <h4>La nostra storia</h4>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis quo nisi id quod, ea maiores, molestiae
-            architecto deleniti optio provident adipisci expedita, sunt dolorem obcaecati earum temporibus dolor?
-            Doloribus,
-            ullam?
+          <h4 class="primary-color">La nostra storia</h4>
+          <p class="text-white">
+            In realtà, noi volevamo fare i programmatori... ma ci siam resi conto
+            che non avevam la stoffa. Quindi...perchè non diventare un gruppo appassionato di cucina e bevande?
+            Come se poi non ce ne fossero già abbastanza. Bhe che dire, questi siamo noi.
           </p>
         </div>
         <div class="col">
-          <h4>I nostri cocktail</h4>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis quo nisi id quod, ea maiores, molestiae
-            architecto deleniti optio provident adipisci expedita, sunt dolorem obcaecati earum temporibus dolor?
-            Doloribus,
-            ullam?
+          <h4 class="primary-color">I nostri cocktail</h4>
+          <p class="text-white">
+            Dolci, salati, lisci, frizzanti, alcolici, analcolici... che dire, sicuramente non che la varietà manchi!
+            I nostri cocktail sono unici e realizzati dal nostro gruppo con bevande selezionate e pregiate, anche provenienti
+            dalle parti più remote del mondo!
           </p>
         </div>
       </div>
@@ -77,23 +113,22 @@ export default {
     <div class="row row-cols-2 row-cols-md-4 gy-3 pb-5">
       <div class="col">
         <img class="small-img"
-          src="https://images.squarespace-cdn.com/content/v1/58d15ded6a49638c26e0888c/4dd33a5a-07e9-47a7-a811-4f2cf8178060/bartender-making-alcoholic-cocktail-summer-cocktail-bar.jpg"
+          src="https://www.repstatic.it/content/localirep/img/rep-genova/2021/02/15/161024037-778ffc51-8191-44e3-a2c5-a4a0b88c42d5.jpg"
           alt="Cocktail Bar">
       </div>
       <div class="col">
         <img class="small-img"
-          src="https://images.squarespace-cdn.com/content/v1/58d15ded6a49638c26e0888c/4dd33a5a-07e9-47a7-a811-4f2cf8178060/bartender-making-alcoholic-cocktail-summer-cocktail-bar.jpg"
+          src="https://magazine.fortevillageresort.com/wp-content/uploads/2019/06/cucina-gourmet-forte-village-resort-sardegna.jpg"
           alt="Cocktail Bar">
       </div>
       <div class="col">
         <img class="small-img"
-          src="https://images.squarespace-cdn.com/content/v1/58d15ded6a49638c26e0888c/4dd33a5a-07e9-47a7-a811-4f2cf8178060/bartender-making-alcoholic-cocktail-summer-cocktail-bar.jpg"
+          src="https://www.instacart.com/company/wp-content/uploads/2023/01/birthday-cocktails-hero.jpg"
           alt="Cocktail Bar">
       </div>
       <div class="col">
         <img class="small-img"
-          src="https://images.squarespace-cdn.com/content/v1/58d15ded6a49638c26e0888c/4dd33a5a-07e9-47a7-a811-4f2cf8178060/bartender-making-alcoholic-cocktail-summer-cocktail-bar.jpg"
-          alt="Cocktail Bar">
+        src="https://kungfood.info/wp-content/uploads/2023/06/I-5-cocktail-piu-buoni-al-mondo.jpg">
       </div>
     </div>
   </div>
@@ -104,7 +139,8 @@ export default {
 //Bisogna importare il file variabili se le si vuole usare
 @import '/src/style/variables/_variables.scss';
 
-h2 {
+
+.primary-color {
   color:$main-color;
 }
 
