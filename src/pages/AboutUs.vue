@@ -31,7 +31,9 @@ export default {
         Ogni membro porta un tocco unico al team, creando <span class="fw-bold">un'atmosfera vivace e accogliente.</span><br>
         <span class="fw-bold">Ecco una breve presentazione dei membri:</span>
       </p>
-      <div class="row row-cols-1 row-cols-md-3 mb-5">
+
+      <!-- THE DRINK TEAM -->
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 gy-5 mb-5">
         <div class="col">
           <a href="https://github.com/Pietro-Leone" target="_blank" class="text-decoration-none">
             <img class="rounded-img"
@@ -59,8 +61,8 @@ export default {
             <small class="text-white">Il "gourmet" del gruppo</small>
           </a>
         </div>
-      </div>
-      <div class="row row-cols-1 row-cols-md-3 mb-5">
+      <!-- </div>
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 mb-5"> -->
         <div class="col">
           <a href="https://github.com/IvanoPisaniello" target="_blank" class="text-decoration-none">
             <img class="rounded-img"
@@ -175,7 +177,7 @@ export default {
 
 .semitransparent-bg{
   background: rgba(54, 54, 54, 0.093);
-  background: linear-gradient(90deg, rgba(54,54,54, 0.5) 0%, rgba(36,36,36,0.5) 51%, rgba(54,54,54,0.5) 100%);
+  background: linear-gradient(90deg, rgba(54,54,54, 0) 0%, rgba(36,36,36,0.5) 51%, rgba(54,54,54,0) 100%);
 }
 
 

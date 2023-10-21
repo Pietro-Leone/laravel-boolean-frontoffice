@@ -27,7 +27,7 @@ export default {
         Ingredienti:
       </h6>
       <span>
-        <span>{{getIngredients()}}</span>
+        <span>{{ getIngredients() }}</span>
       </span>
 
       <h6>
@@ -59,6 +59,7 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+@import '/src/style/variables/_variables.scss';
 @import url('https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,700;1,400&display=swap');
 
 .book {
@@ -69,7 +70,7 @@ export default {
   width: 255px;
   height: 360px;
   background: rgb(106, 130, 152);
-  background: linear-gradient(48deg, rgba(106, 130, 152, 1) 8%, rgb(255, 183, 48)100%);
+  background: linear-gradient(48deg, $secondary-giug 8%, $main-color 100%);
   -webkit-box-shadow: 1px 1px 12px #000;
   box-shadow: 1px 1px 12px #000;
   -webkit-transform: preserve-3d;
@@ -91,7 +92,7 @@ export default {
   .drink-details {
     width: 100%;
     height: 100%;
-    padding: 1rem;
+    padding: 1rem 2rem;
     position: absolute;
     top: 0;
 
@@ -103,15 +104,20 @@ export default {
       font-weight: bold;
 
     }
-    span{
+
+    span {
       font-size: 1.2rem;
+      background: -webkit-linear-gradient($secondary-drew, #1d1d1d);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
 
   }
+
   small {
     font-size: larger;
   }
-  
+
 
 
   .pers-border {
