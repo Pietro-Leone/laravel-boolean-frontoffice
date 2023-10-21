@@ -26,7 +26,7 @@ export default {
 
 <template>
   <div class="container">
-    <h1>Home</h1>
+    <h1>I Nostri Drink</h1>
 
     <div class="cards-container">
       <div class="drink-card position-relative text-white" v-for="drink in drinks">
@@ -41,6 +41,7 @@ export default {
 h1{
   text-align: center;
   font-size: 72px;
+  margin-bottom: 1.5rem;
   //background: -webkit-linear-gradient(rgba(106, 130, 152, 1) 0%,  rgb(230, 138, 18) 100%);
   background: -webkit-linear-gradient(rgb(156 39 176) 0%, rgb(230, 138, 18) 100%);
   -webkit-background-clip: text;

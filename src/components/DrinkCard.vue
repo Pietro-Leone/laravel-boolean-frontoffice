@@ -18,16 +18,15 @@ export default {
 </script>
 
 <template>
-  
   <!-- Details Card -->
   <div class="book">
-    <div class="drink-details w-100 h-100 p-3 position-absolute top-0">
+    <div class="drink-details">
       <h4>{{ drink.drink_name }}</h4>
 
       <h6>
         Ingredienti:
       </h6>
-      <span class="fw-normal">
+      <span>
         <span v-for="(ingredient, i) in drink.ingredients">{{ drink.ingredients.length - 1 === i ? ingredient + "." :
           ingredient + ", " }}</span>
       </span>
@@ -35,7 +34,7 @@ export default {
       <h6>
         Categoria:
       </h6>
-      <span class="fw-normal">{{ drink.category }}</span>
+      <span>{{ drink.category }}</span>
 
     </div>
 
@@ -51,9 +50,9 @@ export default {
           </div>
         </div>
 
-        <div class="p-2 position-relative">
-          <small>{{ drink.alcoholic === "Alcoholic" ? "Alcolico" : "Analcolico" }}</small>
-          <small class="fw-bold pers-position">{{ drink.price }}€</small>
+        <div class="px-3 position-relative d-flex align-items-center flex-column">
+          <p>{{ drink.alcoholic === "Alcoholic" ? "Alcolico" : "Analcolico" }}</p>
+          <small class="fw-bold">{{ drink.price }}€</small>
         </div>
       </div>
     </div>
@@ -61,33 +60,17 @@ export default {
 </template>
 
 <style lang="scss" scoped>
-
-h4{
-  color: #000;
-}
-h6{
-  font-weight: bold;
-}
-// .drink-details {
-//   display: none;
-//   //background-color: rgba(0, 0, 0, 0.9);
-// }
-
-// .drink-card:hover .drink-details {
-//   display: block;
-// }
-
-
-
-///////////////// PROVE CARD ////////////////
-
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,700;1,400&display=swap');
 
 .book {
+  text-align: end;
+
   position: relative;
   border-radius: 10px;
-  width: 220px;
-  height: 300px;
-  background-color: rgb(255, 141, 48);
+  width: 255px;
+  height: 360px;
+  background: rgb(106, 130, 152);
+  background: linear-gradient(48deg, rgba(106, 130, 152, 1) 8%, rgb(255, 183, 48)100%);
   -webkit-box-shadow: 1px 1px 12px #000;
   box-shadow: 1px 1px 12px #000;
   -webkit-transform: preserve-3d;
@@ -104,54 +87,91 @@ h6{
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  color: #000;
-}
+  color: #000000;
 
-.cover {
-  top: 0;
-  position: absolute;
-  background-color: lightgray;
-  width: 100%;
-  height: 100%;
-  border-radius: 10px;
-  cursor: pointer;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
-  -webkit-transform-origin: 0;
-  -ms-transform-origin: 0;
-  transform-origin: 0;
-  -webkit-box-shadow: 1px 1px 12px #000;
-  box-shadow: 1px 1px 12px #000;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-
-
-  border-top-right-radius: 25%;
-
-
-  .pers-position {
+  .drink-details {
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
     position: absolute;
-    right: 10px;
+    top: 0;
+
+    h4,
+    h6 {
+      color: whitesmoke;
+      margin: 1rem 0.5rem;
+      font-size: larger;
+      font-weight: bold;
+
+    }
+    span{
+      font-size: 1.2rem;
+    }
+
   }
+  small {
+    font-size: larger;
+  }
+  
+
 
   .pers-border {
     border-top-left-radius: 4%;
     border-top-right-radius: 25%;
   }
+
+  .cover {
+    top: 0;
+    position: absolute;
+    background-color: #4d5260;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    -webkit-transform-origin: 0;
+    -ms-transform-origin: 0;
+    transform-origin: 0;
+    -webkit-box-shadow: 1px 1px 12px #000;
+    box-shadow: 1px 1px 12px #000;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    border-top-right-radius: 25%;
+
+    h5 {
+      color: rgb(255, 141, 48);
+    }
+
+    small,
+    p {
+      margin-bottom: .5rem;
+      color: lightgray;
+    }
+
+
+  }
+
+  &:hover .cover {
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+    -webkit-transform: rotatey(-80deg);
+    -ms-transform: rotatey(-80deg);
+    transform: rotatey(-85deg);
+  }
 }
 
-.book:hover .cover {
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
-  -webkit-transform: rotatey(-80deg);
-  -ms-transform: rotatey(-80deg);
-  transform: rotatey(-85deg);
-}
+
+
+// .pers-position {
+//   position: absolute;
+//   right: 20px;
+// }
 </style>

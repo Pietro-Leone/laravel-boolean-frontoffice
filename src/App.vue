@@ -22,7 +22,11 @@ export default {
 </template>
 
 <style lang="scss">
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,700;1,400&display=swap');
+
+
 main {
+  font-family: 'Philosopher', sans-serif;
   h1, h4 {
     color: rgb(255, 141, 48);
 
