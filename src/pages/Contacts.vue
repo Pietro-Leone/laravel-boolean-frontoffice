@@ -49,6 +49,8 @@ export default {
 </template>
 
 <style scoped lang="scss">
+//Bisogna importare il file variabili se le si vuole usare
+@import '/src/style/variables/_variables.scss';
 .custom-btn {
     color: #070606;
 

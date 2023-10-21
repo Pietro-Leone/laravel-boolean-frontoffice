@@ -37,6 +37,8 @@ export default {
 </template>
 
 <style lang="scss" scoped>
+//Bisogna importare il file variabili se le si vuole usare
+@import '/src/style/variables/_variables.scss';
 .drink-card {
   background-color: black;
   width: calc((100% / 4) - .75rem);
