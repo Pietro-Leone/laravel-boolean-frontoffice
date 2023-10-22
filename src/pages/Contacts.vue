@@ -1,5 +1,5 @@
 <script>
-
+import axios from 'axios';
 
 export default {
     data() {
@@ -9,23 +9,36 @@ export default {
                 email: "",
                 message: "",
             },
-
+            errors: null,
+            success: null,
 
         };
     },
     methods: {
+        onFormSubmit() {
+            axios.post("http://localhost:8000/api/contacts", this.formData)
+                .then(resp => {
+                    this.success = true;
+                    this.errors = null;
+                })
+                .catch(e => {
+                    this.errors = e.message;
 
+                })
+        },
     },
 };
 </script>
 
 <template>
-    <div class="container body-padding-top">
-        <h1>Inviami una Mail!</h1>
+    <div class="container">
+        <h1>Contattaci con una mail!</h1>
 
+        <div class="alert alert-danger" v-if="errors">
+            Qualcosa è andato storto! {{ errors }}
+        </div>
 
-
-        <form @submit.prevent="onFormSubmit">
+        <form @submit.prevent="onFormSubmit" v-if="!success">
             <div class="mb-3">
                 <label>Nome</label>
                 <input type="text" class="form-control" v-model="formData.name" />
@@ -44,13 +57,18 @@ export default {
             <button type="submit" class="custom-btn">Invia</button>
         </form>
 
-        <router-link class="custom-btn" :to="{ name: 'home' }">Torna Indietro</router-link>
+        <div class="alert alert-success" v-else>
+            Grazie per avermi contattato, ti risponderò il prima possibile!
+        </div>
+
+        <router-link v-if="success" class="custom-btn" :to="{ name: 'home' }">Torna Indietro</router-link>
     </div>
 </template>
 
 <style scoped lang="scss">
 //Bisogna importare il file variabili se le si vuole usare
 @import '/src/style/variables/_variables.scss';
+
 .custom-btn {
     color: #070606;
 
