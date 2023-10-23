@@ -9,28 +9,21 @@ export default {
   data() {
     return {
       drinks: [],
-      alcolFilter: 'Tutti',
+      search: {
+        alcolFilter: 'All'
+      }
     };
   },
   methods: {
     fetchDrinks(url) {
       axios.get(url).then((response) => {
         this.drinks = response.data;
-        console.log(this.drinks);
       })
     },
     filterByAlcol() {
       axios.get('http://127.0.0.1:8000/api/drinks/', { params: this.search })
         .then((response) => {
-          if (this.alcolFilter == 'Tutti') {
-            this.drinks = response.data;
-          } else if (this.alcolFilter == 'Alcolico') {
-            this.drinks = response.data.filter(drink => drink.alcoholic === 'Alcoholic');
-          } else if (this.alcolFilter == 'Analcolico') {
-            this.drinks = response.data.filter(drink => drink.alcoholic === 'Non alcoholic');
-          }
-
-          console.log(this.drinks);
+          this.drinks = response.data;
         })
     }
   },
@@ -46,10 +39,10 @@ export default {
 
     <div class="container-form">
       <form @submit.prevent="filterByAlcol()" class="d-flex gap-3 my-3">
-        <select class="form-select w-auto" aria-label="Default select example" v-model="alcolFilter">
-          <option value="Tutti" selected>Tutti</option>
-          <option value="Alcolico">Alcolico</option>
-          <option value="Analcolico">Analcolico</option>
+        <select class="form-select w-auto" aria-label="Default select example" v-model="search.alcolFilter">
+          <option value="All" selected>Tutti</option>
+          <option value="Alcoholic">Alcolico</option>
+          <option value="Non alcoholic">Analcolico</option>
         </select>
         <button class="btn btn-filtra" type="submit"><span class="btn-text">Filtra</span></button>
       </form>
