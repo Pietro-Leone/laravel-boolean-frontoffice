@@ -36,32 +36,32 @@ export default {
           <h2 class="pb-2">I nostri Social</h2>
           <div class="row social-row row-cols-3 row-cols-sm-2 row-cols-md-3 mx-auto me-sm-0">
             <div class="col">
-              <a href="#" class="github-links">
+              <a href="https://github.com/Pietro-Leone" class="github-links">
                 <img src="/images/Fratello1.jpg" width="32" height="32" class="rounded-circle">
               </a>
             </div>
             <div class="col">
-              <a href="#" class="github-links">
+              <a href="https://github.com/GabrielePazi" class="github-links">
                 <img src="/images/Fratello2.jpg" width="32" height="32" class="rounded-circle">
               </a>
             </div>
             <div class="col">
-              <a href="#" class="github-links">
+              <a href="https://github.com/AndreaLinza" class="github-links">
                 <img src="/images/Genitore1.jpg" width="32" height="32" class="rounded-circle">
               </a>
             </div>
             <div class="col">
-              <a href="#" class="github-links">
+              <a href="https://github.com/IvanoPisaniello" class="github-links">
                 <img src="/images/Genitore2.png" width="32" height="32" class="rounded-circle">
               </a>
             </div>
             <div class="col">
-              <a href="#" class="github-links">
+              <a href="https://github.com/giuliacrr" class="github-links">
                 <img src="/images/Sorella1.jpg" width="32" height="32" class="rounded-circle">
               </a>
             </div>
             <div class="col">
-              <a href="#" class="github-links">
+              <a href="https://github.com/ElyPoli" class="github-links">
                 <img src="/images/Sorella2.jpg" width="32" height="32" class="rounded-circle">
               </a>
             </div>
