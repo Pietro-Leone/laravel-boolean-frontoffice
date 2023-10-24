@@ -22,10 +22,14 @@ export default {
   <div class="book">
     <div class="drink-details">
       <h3>{{ drink.drink_name }}</h3>
-      <h6>Ingredienti:</h6>
-      <span>{{ getIngredients() }}</span>
-      <h6>Categoria:</h6>
-      <span>{{ drink.category }}</span>
+      <div>
+        <h6>Ingredienti:</h6>
+        <span>{{ getIngredients() + "." }}</span>
+      </div>
+      <div>
+        <h6>Categoria:</h6>
+        <span>{{ drink.category }}</span>
+      </div>
 
     </div>
 
@@ -35,10 +39,8 @@ export default {
       <img class="thumb-card" :src="drink.thumbnail" alt="drink">
       <div class="description-cover py-3">
         <h5 class="text-center">{{ drink.drink_name }}</h5>
-        <div class="text-center w-100">
-          <p>{{ drink.alcoholic === "Alcoholic" ? "Alcolico" : "Analcolico" }}</p>
-          <small class="fw-bold">{{ drink.price }}€</small>
-        </div>
+        <p>{{ drink.alcoholic === "Alcoholic" ? "Alcolico" : "Analcolico" }}</p>
+        <small class="fw-bold mb-0">{{ drink.price }}€</small>
       </div>
     </div>
   </div>
@@ -53,7 +55,7 @@ export default {
   position: relative;
   border-radius: 10px;
   width: 255px;
-  min-height: 395px;
+  min-height: 430px;
   height: 100%;
   background: rgb(106, 130, 152);
   background: linear-gradient(48deg, $secondary-giug 8%, $main-color 100%);
@@ -80,6 +82,9 @@ export default {
     padding: 1rem 2rem;
     position: absolute;
     top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
     h3 {
       background: -webkit-linear-gradient($secondary-drew, #000);
@@ -104,10 +109,11 @@ export default {
     }
 
   }
+
   small {
     font-size: larger;
   }
-  
+
 
 
   .cover {
@@ -146,12 +152,13 @@ export default {
 
     .description-cover {
       width: 100%;
+      height: 100%;
       padding: 0 1rem;
       position: relative;
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: center;
+      justify-content: space-between;
 
       h5 {
         color: rgb(255, 141, 48);
