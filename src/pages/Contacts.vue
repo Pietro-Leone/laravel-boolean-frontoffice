@@ -11,20 +11,22 @@ export default {
             },
             errors: null,
             success: null,
-
         };
     },
     methods: {
         onFormSubmit() {
-            axios.post("http://localhost:8000/api/contacts", this.formData)
-                .then(resp => {
-                    this.success = true;
-                    this.errors = null;
-                })
-                .catch(e => {
-                    this.errors = e.message;
-
-                })
+            if (this.formData.name && this.formData.email && this.formData.message) {
+                axios.post("http://localhost:8000/api/contacts", this.formData)
+                    .then(resp => {
+                        this.success = true;
+                        this.errors = null;
+                    })
+                    .catch(e => {
+                        this.errors = `-> ${e.response?.data?.message ?? e.message}`;
+                    })
+            } else {
+                this.errors = "Compila tutti i campi prima di inviare il form.";
+            }
         },
     },
 };
@@ -94,7 +96,7 @@ export default {
 }
 
 .form-container {
-    width:900px;
+    max-width: 900px;
     background-image: url(https://images.squarespace-cdn.com/content/v1/58d15ded6a49638c26e0888c/4dd33a5a-07e9-47a7-a811-4f2cf8178060/bartender-making-alcoholic-cocktail-summer-cocktail-bar.jpg);
     background-position: center;
     background-size: cover;
@@ -118,4 +120,12 @@ export default {
 
 .main-colour-txt {
     color: $main-color;
-}</style>
+}
+
+.alert-danger {
+    --bs-alert-color: white;
+    --bs-alert-bg: rgb(255, 141, 48, 0.7);
+    --bs-alert-border-color: #ff8d30;
+    --bs-alert-link-color: white;
+}
+</style>
