@@ -111,7 +111,7 @@ export default {
               src="https://www.repstatic.it/content/localirep/img/rep-genova/2021/02/15/161024037-778ffc51-8191-44e3-a2c5-a4a0b88c42d5.jpg"
               alt="Cocktail Bar">
             <img class="small-img"
-              src="https://magazine.fortevillageresort.com/wp-content/uploads/2019/06/cucina-gourmet-forte-village-resort-sardegna.jpg"
+              src="https://magazine.misya.info/wp-content/uploads/2022/03/cocktail-analcolico.jpg"
               alt="Cocktail Bar">
           </div>
         </div>

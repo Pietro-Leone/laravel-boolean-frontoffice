@@ -103,23 +103,6 @@ footer {
     color: $main-color;
   }
 
-  // .footer-link {
-  //   text-decoration: none;
-  //   color: white;
-  //   transition: transform 0.2s;
-
-  //   &:hover {
-  //     color: rgb(255, 141, 48);
-  //     transform: scale(1.05);
-  //   }
-
-  //   &:active {
-  //     color: rgb(255, 141, 48);
-  //     font-weight: bold;
-  //   }
-
-  // }
-
   .social-row {
     max-width: 200px;
   }

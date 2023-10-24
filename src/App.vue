@@ -32,7 +32,7 @@ main {
 
   }
 
-  padding-top: 8rem;
+  padding-top: 10rem;
   padding-bottom:2rem;
   flex-grow:1;
 }
