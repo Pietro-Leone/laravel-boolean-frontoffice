@@ -38,7 +38,7 @@ export default {
     <div class="cover">
       <img class="thumb-card" :src="drink.thumbnail" alt="drink">
       <div class="description-cover py-3">
-        <h5 class="text-center">{{ drink.drink_name }}</h5>
+        <h4 class="text-center">{{ drink.drink_name }}</h4>
         <p>{{ drink.alcoholic === "Alcoholic" ? "Alcolico" : "Analcolico" }}</p>
         <small class="fw-bold mb-0">{{ drink.price }}€</small>
       </div>
@@ -51,10 +51,10 @@ export default {
 @import url('https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,700;1,400&display=swap');
 
 .book {
-  text-align: end;
+  text-align: center;
   position: relative;
   border-radius: 10px;
-  width: 255px;
+  width: 260px;
   min-height: 430px;
   height: 100%;
   background: rgb(106, 130, 152);
@@ -79,7 +79,7 @@ export default {
   .drink-details {
     width: 100%;
     height: 100%;
-    padding: 1rem 2rem;
+    padding: 2.5rem 2rem;
     position: absolute;
     top: 0;
     display: flex;
@@ -160,7 +160,7 @@ export default {
       align-items: center;
       justify-content: space-between;
 
-      h5 {
+      h5, h3 {
         color: rgb(255, 141, 48);
         padding: 0 .5rem;
       }
