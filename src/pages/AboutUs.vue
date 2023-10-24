@@ -6,7 +6,7 @@ export default {
 
 <template>
   <div class="container body-padding-top">
-    <div class="pt-4 pb-3 mb-5  semitransparent-bg">
+    <div class="pt-4 pb-3 mb-5 ">
       <h1 class="text-center">Benvenuti nel nostro Cocktail Bar!</h1>
       <p class="pb-2 pt-2 text-center text-white">
         Se sei alla ricerca di un <span class="text-white fw-bold">drink gustoso</span> accompagnato da una
@@ -18,13 +18,13 @@ export default {
     </div>
   </div>
   <!--Immagine-->
-  <div class="pb-5">
+  <div>
     <img class="medium-img"
       src="https://images.squarespace-cdn.com/content/v1/58d15ded6a49638c26e0888c/4dd33a5a-07e9-47a7-a811-4f2cf8178060/bartender-making-alcoholic-cocktail-summer-cocktail-bar.jpg"
       alt="Cocktail Bar">
   </div>
-  <div class="container pb-2 ">
-    <div class="pt-3 pb-3 mt-1 mb-5 text-center rounded semitransparent-bg">
+  <div class="container py-5 semitransparent-bg" style="margin-top: -5px; margin-bottom: -32px;">
+    <div class="pt-3 pb-3 mt-1 mb-5 text-center rounded">
       <h2 class="mb-3 primary-color">Drink Team</h2>
       <p class="text-white mb-5">
         Il "Drink Team" è un gruppo di amici che condivide una <span class="fw-bold">passione per le bevande e la
@@ -80,7 +80,7 @@ export default {
         </div>
       </div>
     </div>
-    <div class="pb-4 pt-4 semitransparent-bg">
+    <div class="pb-4 pt-4">
       <div class="row row-cols-1 row-cols-md-2">
         <div class="col">
           <h4 class="primary-color">La nostra storia</h4>
@@ -125,16 +125,6 @@ export default {
           </div>
         </div>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
-        data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
-        data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
     </div>
   </div>
 </template>
