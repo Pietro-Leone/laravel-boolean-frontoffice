@@ -105,7 +105,7 @@ export default {
     <!-- Carousel -->
     <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">
-        <div data-bs-interval="3000" data-bs-pause="false" class="carousel-item active">
+        <div data-bs-interval="2500" data-bs-pause="false" class="carousel-item active">
           <div class="d-flex">
             <img class="small-img"
               src="https://www.repstatic.it/content/localirep/img/rep-genova/2021/02/15/161024037-778ffc51-8191-44e3-a2c5-a4a0b88c42d5.jpg"
@@ -115,7 +115,7 @@ export default {
               alt="Cocktail Bar">
           </div>
         </div>
-        <div data-bs-interval="3000" data-bs-pause="false" class="carousel-item">
+        <div data-bs-interval="2500" data-bs-pause="false" class="carousel-item">
           <div class="d-flex">
             <img class="small-img"
               src="https://www.instacart.com/company/wp-content/uploads/2023/01/birthday-cocktails-hero.jpg"
