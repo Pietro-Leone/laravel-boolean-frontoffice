@@ -46,9 +46,12 @@ export default {
 </template>
 
 <style scoped lang="scss">
+@import '/src/style/variables/_variables.scss';
+
 .navbar {
     background-color: rgb(77, 82, 96);
 }
+
 .nav-link {
     text-decoration: none;
     color: white;
@@ -58,6 +61,12 @@ export default {
         color: rgb(255, 141, 48);
         transform: scale(1.05);
     }
+}
+
+.form-control:focus {
+    border-color: $main-color;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgb(156 39 176 / 28%);
 }
 
 

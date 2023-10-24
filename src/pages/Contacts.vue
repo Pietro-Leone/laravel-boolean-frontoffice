@@ -94,7 +94,7 @@ export default {
 }
 
 .form-container {
-    max-width: 900px;
+    width:900px;
     background-image: url(https://images.squarespace-cdn.com/content/v1/58d15ded6a49638c26e0888c/4dd33a5a-07e9-47a7-a811-4f2cf8178060/bartender-making-alcoholic-cocktail-summer-cocktail-bar.jpg);
     background-position: center;
     background-size: cover;
@@ -106,6 +106,13 @@ export default {
 
     .form-control {
         border: 1px solid #808080;
+
+
+        &:focus {
+            border-color: $main-color;
+            outline: 0;
+            box-shadow: 0 0 0 0.25rem rgb(156 39 176 / 28%);
+        }
     }
 }
 
